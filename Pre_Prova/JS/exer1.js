@@ -6,7 +6,7 @@ class Aluno {
         this.semestre = semestre
     }
     exibirInformacoes() {
-        return (" nome " + this.nome + " sobrenome " + this.sobrenome + " curso " + this.curso + " semestre " + this.semestre)
+        return (" nome:" + this.nome + " Sobrenome:" + this.sobrenome + " Curso:" + this.curso + " Semestre:" + this.semestre)
     }
 }
 

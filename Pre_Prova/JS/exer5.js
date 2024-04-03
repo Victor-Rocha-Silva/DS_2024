@@ -1,13 +1,17 @@
 
-class CalcularFGTS {
+class CalculadoraFGTS {
     salario;
     constructor(salario) {
         this.salario = salario;
     }
-    CalculadoraFGTS() {
-        return (this.salario % 8)
+
+
+
+    calcularFGTS() {
+        return (this.salario - (this.salario * 0.08))
     }
 }
-let laod = new CalcularFGTS("Lado Do Quadrado")
-console.log(laod)
-console.log(`o Total é: calcularFGTS()`);
+
+let CalculadoraFGTS1 = new CalculadoraFGTS(1000)
+
+console.log(`o salario com desconto é: ${CalculadoraFGTS1.calcularFGTS()}`)

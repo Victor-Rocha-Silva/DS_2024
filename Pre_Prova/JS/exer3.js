@@ -5,14 +5,14 @@ class Aluno {
         this.nota = nota
     }
     verificarAprovacao() {
-        if (this.nota < 7) {
-            console.log('Reprovado Vagabundo')
-        }
-        else if (this.nota >= 7) {
+        if (this.nota >= 7) {
             console.log('Aprovado')
+        }
+        else{
+            console.log('Reprovado Vagabundo')
         }
 
     }
 }
-let aluno1 = new Aluno("Gustavo", "15", "6");
+let aluno1 = new Aluno("Gustavo", "15 anos", "9");
 console.log(aluno1.verificarAprovacao());
